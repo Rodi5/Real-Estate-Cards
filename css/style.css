@@ -1,0 +1,204 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+width: 1170px;
+    }
+}
+/* start header  */
+.header {
+    margin: 50px auto;
+}
+.header .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.header .container .card {
+    padding: 10px 20px;
+}
+.header .container .card .feat {
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 2;
+    top: 49px
+}
+.header .container .card .feat::after {
+    content: "";
+    position: absolute;
+    border: 11px solid;
+    border-color: transparent transparent transparent orangered;
+    left: 68px;
+    top: 0px;
+}
+.header .container .card .image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+.header .container .card .image h3 {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    border: 1px solid;
+    padding:15px 20px;
+}
+.header .container .card .image:hover img {
+    transition: .3s;
+    opacity: .5;
+}
+.header .container .card .image:hover h3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    color: black;
+}
+.header .container .card .image span {
+    background-color: #ff624a;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    left: 12px;
+    bottom: 15px;
+}
+.header .container .card .image .white {
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+}
+@media (min-width:1200px) {
+    .header .container .card .image .white {
+        position: absolute;
+        top: 170px;
+        right: 50px;
+        color: white;
+        font-size: 20px;
+    }
+}
+@media (max-width:768px) {
+    .header .container .card .image .white {
+        position: absolute;
+        top: 170px;
+        left: 235px;
+        color: white;
+        font-size: 20px;
+    }
+}
+@media (min-width:751px) and (max-width:1120px) {
+    .header .container .card .image .white {
+        position: absolute;
+        top: 170px;
+        left: 235px;
+        color: white;
+        font-size: 20px;
+    }
+}
+.header .container .card .image .arrow {
+    color: white;
+    font-size: 13px;
+}
+.header .container .card .image .right {
+    position: absolute;
+    top: 165px;
+    left: 260px;
+}
+.header .container .card .image .left {
+    position: absolute;
+    top: 180px;
+    left: 265px;
+}
+.header .card .information {
+    padding: 15px 20px;
+    background-color: #eeeeee75;
+    position: relative;
+    top: -4px;
+    width: 300px;
+}
+.header .card .information .info {
+    padding: 5px;
+}
+.header .card .information .info div {
+    font-weight: bold;
+}
+.header .card .information .info p {
+    color: #777;
+    line-height: 1.5;
+    font-size: 13px;
+    margin: 13px auto;
+}
+.header .card .information .room {
+    margin: 0px 5px;
+    word-spacing: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .card .information .room span {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 2;
+}
+.header .card .information .room .icon {
+    color: #777;
+    font-size: 15px;
+}
+.header .card .information .item3 {
+    word-spacing: 4px;
+    
+}
+.header .card .information .item3 span:nth-of-type(2) {
+    color: #777;
+}
+.header .card .icon .item {
+    margin: 5px 15px;
+    position: relative;
+    left: -8px;
+}
+.header .card .information .sale {
+    margin: 10px 5px;
+    line-height: 1.5;
+}
+.header .card .information .sale span {
+    font-size: 11px;
+}
+.header .card .information .sale p {
+    color: #2da0a0;
+}
+/* end header  */
